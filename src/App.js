@@ -16,15 +16,13 @@ function App() {
         <Header />
         <div className="container">
           <Routes>
-            // @route
             <Route exact path='/' element={
                 <>
                   <FeedbackForm />
                   <FeedbackStats />
                   <FeedbackList />
                 </>
-              }></Route>
-            // @route
+              } />
             <Route path='/about' element={<AboutPage />} />
           </Routes>
           <AboutIconLink />
